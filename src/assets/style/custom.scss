@@ -1,0 +1,51 @@
+// ======================================================= FONT FACE
+@font-face {
+    font-family: "MainFontMedium";
+    src: url("@/assets/fonts/Sans-Medium__W.woff2") format("woff2"),
+        url("@/assets/fonts/Sans-Medium__W.woff") format("woff");
+}
+
+@font-face {
+    font-family: "MainFontRegular";
+    src: url("@/assets/fonts/Sans-Regular__W.woff2") format("woff2"),
+        url("@/assets/fonts/Sans-Regular__W.woff") format("woff");
+}
+// ======================================================= FONT FACE
+
+// ======================================================= FLEX
+@mixin flexRow( $jc, $ai ) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin flexCol( $jc, $ai ) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $jc;
+    align-items: $ai;
+}
+// ======================================================= FLEX
+
+// ======================================================= FONT
+@mixin main-font-medium() {
+    font-family: MainFontMedium;
+}
+
+@mixin main-font-regular() {
+    font-family: MainFontRegular;
+}
+// ======================================================= FONT
+
+// ======================================================= VAR
+$active-color: #1e1e1e;
+$text-color: #696969;
+$border: 1px solid #c7c7c7;
+$border-hover: 1px solid #7b7b7b;
+$border-warning: 1px solid #c45454;
+$small-radius: 4px;
+$backdrop: #eeeeee;
+$backdrop-active: #d5d5d5;
+$warning-color: #c45454;
+// ======================================================= VAR
+
